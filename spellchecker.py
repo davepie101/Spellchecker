@@ -28,9 +28,6 @@ def dist1(word):
 #2 distance away
 def dist2(word):
 	one_array = []
-	# for d1 in dist1(word):
-	# 	for d2 in dist1(d1):
-	# 		one_array.append(d2)
 	for words in Dictionary:
 		if editdistance.eval(word, words) == 2:
 			one_array.append(words)
@@ -38,10 +35,6 @@ def dist2(word):
 
 def dist3(word):
 	one_array = []
-	# for d1 in dist1(word):
-	# 	for d2 in dist1(d1):
-	# 		for d3 in dist1(d2):
-	# 			one_array.append(d3)
 	for words in Dictionary:
 		if editdistance.eval(word, words) == 3:
 			one_array.append(words)
